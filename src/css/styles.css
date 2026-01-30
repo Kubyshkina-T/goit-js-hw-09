@@ -76,13 +76,7 @@
     outline: none;
    border-color:1px #000;
     }
-/* 
-  .form-field input::placeholder {
-    color: transparent;
-        }
-    .form-field input:focus::placeholder {
-    color:#2E2F42;
-        } */
+
  .form-field label {
    display: flex;
    flex-direction: column;
@@ -99,6 +93,7 @@
   .form-field textarea {
     width: 100%;
     box-sizing: border-box;
+    resize: vertical;
   }
   .form-container {
     display: flex;
@@ -113,7 +108,6 @@
      border-radius: 8px;
      border: none;
       outline: none;
-      align-self: center;
       transition:
           background-color 0.25s ease,
           transform 0.2s ease;
@@ -123,6 +117,4 @@
     .submit-btn:focus{
       background-color: #6C8CFF ;
     }
-    input{
-
-    }
+  
