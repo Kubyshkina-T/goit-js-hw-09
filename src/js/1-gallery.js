@@ -1,8 +1,3 @@
-console.log("gallery");
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
-new SimpleLightbox('.gallery-item a', { /* options */ });
-
 const images = [
   {
     preview:
@@ -71,7 +66,6 @@ const images = [
 
 const container = document.querySelector(".gallery");
 container.insertAdjacentHTML("beforeend", createMarkup(images));
-container.addEventListener("click", handleClick);
 
 function createMarkup(arr) {
     return arr.map((item) => `
@@ -84,6 +78,17 @@ function createMarkup(arr) {
     </a>
     </li>`).join("")
 }
+
+
+import SimpleLightbox from "simplelightbox";
+import "simplelightbox/dist/simple-lightbox.min.css";
+const lightbox = new SimpleLightbox('.gallery-item a', {
+  captions: true,
+  captionsData: 'alt',
+  captionDelay: 250,
+});
+lightbox.show();
+
 
 // function handleClick(event) {
 //   if (event.target.nodeName !== 'IMG') {
