@@ -13,6 +13,23 @@
         <a class="back-link" href="./index.html">Go back</a>
         <h1 class="main-title">Form</h1>
         <load src="./partials/back-link.html" />
+        <div class="form-container">
+          <form class="feedback-form" autocomplete="off">
+            <div class="form-field">
+              <label>
+                Email
+                <input type="email" name="email" autofocus />
+              </label>
+            </div>
+            <div class="form-field">
+              <label>
+                Message
+                <textarea name="message" rows="8"></textarea>
+              </label>
+            </div>
+            <button class="submit-btn" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
     </main>
     <script type="module" src="./js/2-form.js"></script>
