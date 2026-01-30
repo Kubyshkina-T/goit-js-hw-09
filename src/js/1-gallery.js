@@ -88,28 +88,3 @@ const lightbox = new SimpleLightbox('.gallery-item a', {
   captionDelay: 250,
 });
 lightbox.show();
-
-
-// function handleClick(event) {
-//   if (event.target.nodeName !== 'IMG') {
-//     return;
-//   }
-//   event.preventDefault();
-
-//    const largeImageURL = event.target.dataset.source;
-
-//   const instance = basicLightbox.create(`
-//   <div class="modal">
-//   <img src="${event.target.dataset.source}" alt="${event.target.alt}"/></div>
-// `);
-  
-//   const img = instance.element().querySelector("img");
-//   img.src = largeImageURL;
-//   img.alt = event.target.alt;
-
-//  img.addEventListener("click", () => {
-//     instance.close();
-//  });
-  
-//   instance.show();
-// }
